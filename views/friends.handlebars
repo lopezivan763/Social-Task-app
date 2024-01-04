@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/task-page.css">
+<div id="friends-page-body d-flex w-100">
+  <div class="d-flex justify-content-around" id="box">
+    <div class="side">
+      <h2>Welcome {{user.first_name}}! </h2>
+      <div class="friends-container">
+        {{#each friends as |friend|}}
+        <a href="/user/{{friend.user.id}}" class="friends">{{friend.user.username}}</a>
+        {{/each}}
+      </div>
+    </div>
+    <div id="friends-page-body ">
+      {{#each friends as |friend|}}
+        <section>
+          {{!-- <h2>Profile:</h2>
+          <p>Username: {{friend.user.username}}</p> --}}
+
+          {{#each friend.user.tasks as |task|}}
+          <div>
+            {{!-- <p>Task Title: {{task.title}}</p> --}}
+            {{!-- <section class="post-sec"> --}}
+              {{!-- {{> test}} --}}
+              {{> task-card}}
+            {{!-- </section> --}}
+          </div>
+          {{/each}}
+        </section>
+      {{/each}}
+    </div>
+  </div>
+</div>
+

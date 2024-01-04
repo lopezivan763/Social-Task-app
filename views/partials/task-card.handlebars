@@ -1,0 +1,21 @@
+<section class="task-card">
+    <div class="task-card-header bg-light d-flex justify-content-between">
+        <h4><a href="/tasks/{{id}}">{{title}}</a></h4>
+        <div class="task-info d-flex justify-content-between">
+            <a class="username" href="/user/{{author_id}}">{{user.username}}</a>
+            <p>{{format_date date_created}}</p>
+        </div>
+        <div class="state {{state}}">
+            {{state}}
+        </div>
+    </div>
+
+    <div class="task-card-body">
+        <p>{{description}}</p>
+        <div class="d-flex flex-wrap">
+        {{#each task_by_taskTag as |taskTag|}}
+            <a class="button-4" href="/tags/{{taskTag.id}}">{{taskTag.tag_name}}</a>
+        {{/each}}
+        </div>
+    </div>
+</section>

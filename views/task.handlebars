@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="/css/task.css">
+<link rel="stylesheet" href="/css/task-page.css">
+
+<div id="task-page-body">
+    <section class="task-card">
+        <div class="task-card-header bg-light d-flex justify-content-between">
+            <h4>{{task.title}}</h4>
+            <div class="task-info d-flex justify-content-between">
+                <a href="/user/{{task.author_id}}">{{task.user.username}}</a>
+                <p>{{format_date task.date_created}}</p>
+            </div>
+            <div class="state {{task.state}}">
+                {{task.state}}
+            </div>
+        </div>
+
+        <div class="task-card-body">
+            <p>{{task.description}}</p>
+            {{#if owner}}
+            <a href="/edit-task/{{task.id}}" id="edit-btn">Edit Task</a>
+            {{/if}}
+            <ul class="d-flex flex-row" id="tag-list" data-task="{{task.id}}">
+                {{#each task.task_by_taskTag as |tag|}}
+                <li class="d-flex justify-content-between p-2 m-1 align-content-center">
+                    <a href="/tags/{{tag.id}}" class="button-4">
+                        <p class="tags mb-0 align-center">{{tag.tag_name}}</p>
+                    </a>
+                    {{#if ../owner}}
+                    <button class="btn button-4" data-tag="{{tag.id}}">Remove</button>
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+            {{> linkTagToTask}}
+        </div>
+        <p class="m-3">Emotion: {{emotion}}</p>
+    </section>
+    <aside>
+        <button onclick="openModal()" class="comment-btn">View Comments</button>
+    </aside>
+</div>
+<script>
+    function openModal() {
+        const modal = document.getElementById('commentModal');
+        modal.style.display = 'block';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('commentModal');
+        modal.style.display = 'none';
+    }
+</script>
+
+<div id="commentModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Comments:</h2>
+        <div class="d-flex">
+            <div>
+                {{#each task.comments as |comment|}}
+                {{> comment}}
+                {{/each}}
+            </div>
+            {{> commentForm}}
+        </div>
+    </div>
+</div>
+ 
+{{#if owner}}
+<script src="/js/removeTag.js"></script>
+{{/if}}

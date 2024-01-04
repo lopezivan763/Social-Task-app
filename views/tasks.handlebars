@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/task-page.css">
+
+<div class="row d-flex justify-content-center">
+    <aside id="tag-side" class="d-flex flex-column br-4 p-0">
+        {{#if tags}}
+        {{#each tags as |tag|}}
+        {{> tag-card}}
+        {{/each}}
+        {{else}}
+        <h3>No tags yet...</h3>
+        {{/if}}
+    </aside>
+    <section id="tasks" class="">
+        <div class="task-div">
+            {{#if tasks}}
+            {{#each tasks as |task|}}
+            {{> task-card}}
+            {{/each}}
+            {{else}}
+            <h3>No posts yet... :( {{#if logged_in}}{{else}}log in and {{/if}}<a href="/add-task">create a task</a>!
+            </h3>
+            {{/if}}
+        </div>
+    </section>
+</div>

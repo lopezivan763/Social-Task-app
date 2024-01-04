@@ -1,0 +1,198 @@
+[
+  {
+    "first_name": "John",
+    "last_name": "Stamos",
+    "username": "san",
+    "email": "sandman@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Billy",
+    "last_name": "Bob",
+    "username": "bobbyboy12",
+    "email": "Bob1717@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "username": "Alicious",
+    "email": "alice.smith@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Bob",
+    "last_name": "Johnson",
+    "username": "Bobalicious",
+    "email": "bob.johnson@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Charlie",
+    "last_name": "Brown",
+    "username": "CharlieCool",
+    "email": "charlie.brown@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Lee",
+    "username": "DaringDavid",
+    "email": "david.lee@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Eva",
+    "last_name": "Davis",
+    "username": "EvaEnigma",
+    "email": "eva.davis@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Frank",
+    "last_name": "Wilson",
+    "username": "FunkyFrank",
+    "email": "frank.wilson@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Grace",
+    "last_name": "Harris",
+    "username": "GroovyGrace",
+    "email": "grace.harris@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Henry",
+    "last_name": "Turner",
+    "username": "HipsterHenry",
+    "email": "henry.turner@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Isabel",
+    "last_name": "Clark",
+    "username": "Isabelicious",
+    "email": "isabel.clark@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "James",
+    "last_name": "Miller",
+    "username": "JamminJames",
+    "email": "james.miller@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Katie",
+    "last_name": "Wilson",
+    "username": "KoolKatie",
+    "email": "katie.wilson@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Liam",
+    "last_name": "Adams",
+    "username": "LiamLively",
+    "email": "liam.adams@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Mia",
+    "last_name": "Robinson",
+    "username": "MiaMagic",
+    "email": "mia.robinson@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Noah",
+    "last_name": "Martinez",
+    "username": "NoahNinja",
+    "email": "noah.martinez@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Olivia",
+    "last_name": "Carter",
+    "username": "OliviaOutlaw",
+    "email": "olivia.carter@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Peter",
+    "last_name": "Turner",
+    "username": "PeterPirate",
+    "email": "peter.turner@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Quinn",
+    "last_name": "Adams",
+    "username": "QuinnQuest",
+    "email": "quinn.adams@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Ryan",
+    "last_name": "Wilson",
+    "username": "RockinRyan",
+    "email": "ryan.wilson@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Sophia",
+    "last_name": "Hall",
+    "username": "SophisticatedSophia",
+    "email": "sophia.hall@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Tom",
+    "last_name": "Harris",
+    "username": "TomTheTiger",
+    "email": "tom.harris@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Uma",
+    "last_name": "Martinez",
+    "username": "UmaUnicorn",
+    "email": "uma.martinez@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Vincent",
+    "last_name": "Carter",
+    "username": "VincentVagabond",
+    "email": "vincent.carter@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Wendy",
+    "last_name": "Smith",
+    "username": "WendyWild",
+    "email": "wendy.smith@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Xander",
+    "last_name": "Turner",
+    "username": "XanderXtreme",
+    "email": "xander.turner@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Yara",
+    "last_name": "Johnson",
+    "username": "YaraYoyo",
+    "email": "yara.johnson@example.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Zane",
+    "last_name": "Davis",
+    "username": "ZaneZest",
+    "email": "zane.davis@example.com",
+    "password": "password12345"
+  }  
+]

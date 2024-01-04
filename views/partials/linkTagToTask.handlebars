@@ -1,0 +1,14 @@
+{{#if unlinkedTags}}
+<div class="h-auto">
+    <form action="" id="link-new-tag" data-task-id="{{task.id}}" class="d-flex flex-row w-auto py-2">
+        <label for="link-tag-select" class="mr-3">Select Tag:</label>
+        <select id="link-tag-select" class="mr-3 p-2">
+            {{#each unlinkedTags as |unlinked-tag|}}
+            <option value="{{unlinked-tag.id}}">{{unlinked-tag.tag_name}}</option>
+            {{/each}}
+        </select>
+        <button>Add tag</button>
+    </form>
+</div>
+<script src="/js/linkTagToTask.js"></script>
+{{/if}}

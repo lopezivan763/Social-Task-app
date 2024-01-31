@@ -4,10 +4,7 @@ require('dotenv').config();
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
-  const urlParts = new URL(process.env.JAWSDB_URL);
-  const dialect = urlParts.protocol ? urlParts.protocol.replace(/:$/, "") : 'mysql';
-
-  sequelize = new Sequelize(process.env.JAWSDB_URL, { dialect });
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -20,5 +17,5 @@ if (process.env.JAWSDB_URL) {
     }
   );
 }
-
+//
 module.exports = sequelize;

@@ -4,9 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-// const imgut =require('imgur');
 const sequelize = require('./config/connection');
-// const fileUpload = require('express-fileupload');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();

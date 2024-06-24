@@ -10,7 +10,7 @@ const options = {
   url: 'https://quotes85.p.rapidapi.com/keyword',
   params: {word: 'success', word: 'life', word:'time'},
   headers: {
-    'X-RapidAPI-Key': '1715b24a43msh9b5023d4aa71c9bp108651jsn692826a37b09',
+    'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
     'X-RapidAPI-Host': 'quotes85.p.rapidapi.com'
   }
 };
